@@ -1,0 +1,61 @@
+@font-face {
+    font-family: font;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0%;
+    }
+    body{
+        font-family: "font";
+    }
+    nav{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#parent{ display: grid;
+
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 5px
+    ; height: 100vh}
+    .child{
+        background-color: pink;
+    }
+    .child1{
+        grid-column: span 2;
+    }
+    .child2{
+        grid-row: span 2;
+        background-color:orange;
+    }
+.child5{
+    grid-row: span 2;
+
+}
+.child5,.child6,.child7{
+    display: flex;
+ 
+    object-fit: cover;
+  
+}
+.img1{
+    width: 30%;
+
+}
+img{
+    max-width: 100%;
+}
+
+ul { 
+    list-style: none;
+    display: flex;
+    gap: 15Px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 100%;
+}
